@@ -1,0 +1,23 @@
+<!--pages/operation/operation.wxml-->
+<view class="container">
+ <view class="row" style="height:100%;width:100%">
+      <image src="{{imageUrl}}"></image>
+    </view>
+  <form bindsubmit="formSubmit" bindreset="formReset" style="width:100%"> 
+    <view class="row">
+      <button bindtap="uploadImage" class="uploadbutton">选择图片</button>
+    </view>
+    <view class="row">
+      <text>餐品名称: </text>
+      <input type="text" name="areaName" placeholder="请输入名称" value="{{areaName}}" />
+    </view>
+    <view class="row">
+      <text>餐品价格: </text>
+      <input type="number" name="priority" placeholder="请输入价格(元)" value="{{priority}}" />
+    </view>
+    <view class="row" style="height:50px">
+      <button type="priority" form-type="submit" style="width:45%">提交</button>
+      <button type="priority" form-type="reset"  style="width:45%">清空</button>
+    </view>
+  </form>
+</view>
